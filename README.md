@@ -11,15 +11,15 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION >= 120000;
   <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/ce9b238a2119dcfc8a04d6c24cea6a55c91157ea/Section-1/revising-the-select-query-2-problem.png">
 </p>
 
-![Revising the Select Query I](Section-1/revising-the-select-query-2-problem.png)
-
 ## 2. Revising the Select Query II
 
 ```sql
 SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
 ```
 
-![Revising the Select Query II](Section-1/revising-the-select-query-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-1/revising-the-select-query-problem.png">
+</p>
 
 ## 3. Select All
 
@@ -27,7 +27,9 @@ SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
 SELECT * FROM CITY;
 ```
 
-![Select All](Section-1/select-all-sql-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-1/select-all-sql-problem.png">
+</p>
 
 ## 4. Select By ID
 
@@ -35,21 +37,24 @@ SELECT * FROM CITY;
 SELECT * FROM CITY WHERE ID = 1661;
 ```
 
-![Select By ID](Section-1/select-by-id-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-1/select-by-id-problem.png">
+</p>
 
 # Section 2
 
-## 1. Weather Observation Station 3
+## 1. Employee Names
 
 ```sql
 SELECT NAME FROM EMPLOYEE
 ORDER BY NAME;
 ```
 
-![Weather Observation Station 3](Section-2/name-of-employees-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-2/name-of-employees-problem.png">
+</p>
 
-
-## 2. Employee Names
+## 2. Employee Salaries
 
 ```sql
 SELECT NAME FROM EMPLOYEE
@@ -58,27 +63,33 @@ AND MONTHS < 10
 ORDER BY EMPLOYEE_ID;
 ```
 
-![Employee Names](Section-2/salary-of-employees-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-2/salary-of-employees-problem.png">
+</p>
 
-## 3. Employee Salaries
+## 3. Weather Observation Station 3
 
 ```sql
 SELECT DISTINCT(CITY) FROM STATION
 WHERE (ID % 2 ) = 0;
 ```
 
-![Employee Salaries](Section-2/weather-observation-station-3-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-2/weather-observation-station-3-problem.png">
+</p>
 
 
 # Section 3
 
-## 1. Revising Aggregations - The Count Function
+## 1. Average Population
 
 ```sql
 SELECT FLOOR(AVG(POPULATION)) FROM CITY;
 ```
 
-![Revising Aggregations - The Count Function](Section-2/average-population-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-3/average-population-problem.png">
+</p>
 
 ## 2. Revising Aggregations - The Sum Function
 
@@ -87,7 +98,9 @@ SELECT SUM(POPULATION) FROM CITY
 WHERE DISTRICT = 'California';
 ```
 
-![Revising Aggregations - The Sum Function](Section-3/revising-aggregations-sum-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-3/revising-aggregations-sum-problem.png">
+</p>
 
 
 ## 3. Revising Aggregations - Averages
@@ -97,16 +110,20 @@ SELECT AVG(POPULATION) FROM CITY
 WHERE DISTRICT = 'California';
 ```
 
-![Revising Aggregations - Averages](Section-1/revising-aggregations-the-average-function-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-3/revising-aggregations-the-average-function-problem.png">
+</p>
 
-## 4. Average Population
+## 4. Revising Aggregations - The Count Function
 
 ```sql
 SELECT COUNT(*) FROM CITY
 WHERE POPULATION > 100000;
 ```
 
-![Average Population](Section-1/revising-aggregations-the-count-function-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-3/revising-aggregations-the-count-function-problem.png">
+</p>
 
 ## 5. Population Density Difference
 
@@ -114,8 +131,9 @@ WHERE POPULATION > 100000;
 SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY;
 ```
 
-![Population Density Difference](Section-1/population-density-difference-problem.png)
-
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-3/population-density-difference-problem.png">
+</p>
 
 # Section 4
 
@@ -127,7 +145,9 @@ INNER JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
 WHERE COUNTRY.CONTINENT = 'Africa';
 ```
 
-![African Cities](Section-4/african-cities-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-4/african-cities-problem.png">
+</p>
 
 ## 2. Population Census
 
@@ -137,7 +157,9 @@ INNER JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
 WHERE COUNTRY.CONTINENT = 'Asia';
 ```
 
-![Population Census](Section-4/asian-population-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-4/asian-population-problem.png">
+</p>
 
 ## 3. Average Population of Each Continent
 
@@ -148,4 +170,6 @@ WHERE COUNTRY.CODE = CITY.COUNTRYCODE
 GROUP BY COUNTRY.CONTINENT;
 ```
 
-![Average Population of Each Continent](Section-4/average-population-of-each-continent-problem.png)
+<p align="center">
+  <img width="100%" height="100%" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/a15e43f6a9b7c10eee4c2eb7a857804e88f900a3/Section-4/average-population-of-each-continent-problem.png">
+</p>
