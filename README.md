@@ -15,7 +15,7 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION >= 120000;
 SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
 ```
 
-![Revising the Select Query I](Section-1/revising-the-select-query-problem.png)
+![Revising the Select Query II](Section-1/revising-the-select-query-problem.png)
 
 ## 3. Select All
 
@@ -23,7 +23,7 @@ SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
 SELECT * FROM CITY;
 ```
 
-![Revising the Select Query I](Section-1/select-all-sql-problem.png)
+![Select All](Section-1/select-all-sql-problem.png)
 
 ## 4. Select By ID
 
@@ -31,7 +31,7 @@ SELECT * FROM CITY;
 SELECT * FROM CITY WHERE ID = 1661;
 ```
 
-![Revising the Select Query I](Section-1/select-by-id-problem.png)
+![Select By ID](Section-1/select-by-id-problem.png)
 
 # Section 2
 
@@ -42,7 +42,7 @@ SELECT NAME FROM EMPLOYEE
 ORDER BY NAME;
 ```
 
-![Revising the Select Query I](Section-2/name-of-employees-problem.png)
+![Weather Observation Station 3](Section-2/name-of-employees-problem.png)
 
 
 ## 2. Employee Names
@@ -54,7 +54,7 @@ AND MONTHS < 10
 ORDER BY EMPLOYEE_ID;
 ```
 
-![Revising the Select Query I](Section-2/salary-of-employees-problem.png)
+![Employee Names](Section-2/salary-of-employees-problem.png)
 
 ## 3. Employee Salaries
 
@@ -63,7 +63,7 @@ SELECT DISTINCT(CITY) FROM STATION
 WHERE (ID % 2 ) = 0;
 ```
 
-![Revising the Select Query I](Section-2/weather-observation-station-3-problem.png)
+![Employee Salaries](Section-2/weather-observation-station-3-problem.png)
 
 
 # Section 3
@@ -74,7 +74,7 @@ WHERE (ID % 2 ) = 0;
 SELECT FLOOR(AVG(POPULATION)) FROM CITY;
 ```
 
-![Revising the Select Query I](Section-2/average-population-problem.png)
+![Revising Aggregations - The Count Function](Section-2/average-population-problem.png)
 
 ## 2. Revising Aggregations - The Sum Function
 
@@ -83,7 +83,7 @@ SELECT SUM(POPULATION) FROM CITY
 WHERE DISTRICT = 'California';
 ```
 
-![Revising the Select Query I](Section-3/revising-aggregations-sum-problem.png)
+![Revising Aggregations - The Sum Function](Section-3/revising-aggregations-sum-problem.png)
 
 
 ## 3. Revising Aggregations - Averages
@@ -93,7 +93,7 @@ SELECT AVG(POPULATION) FROM CITY
 WHERE DISTRICT = 'California';
 ```
 
-![Revising the Select Query I](Section-1/revising-aggregations-the-average-function-problem.png)
+![Revising Aggregations - Averages](Section-1/revising-aggregations-the-average-function-problem.png)
 
 ## 4. Average Population
 
@@ -102,7 +102,7 @@ SELECT COUNT(*) FROM CITY
 WHERE POPULATION > 100000;
 ```
 
-![Revising the Select Query I](Section-1/revising-aggregations-the-count-function-problem.png)
+![Average Population](Section-1/revising-aggregations-the-count-function-problem.png)
 
 ## 5. Population Density Difference
 
@@ -110,7 +110,7 @@ WHERE POPULATION > 100000;
 SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY;
 ```
 
-![Revising the Select Query I](Section-1/population-density-difference-problem.png)
+![Population Density Difference](Section-1/population-density-difference-problem.png)
 
 
 # Section 4
@@ -123,7 +123,7 @@ INNER JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
 WHERE COUNTRY.CONTINENT = 'Africa';
 ```
 
-![Revising the Select Query I](Section-4/african-cities-problem.png)
+![African Cities](Section-4/african-cities-problem.png)
 
 ## 2. Population Census
 
@@ -133,7 +133,7 @@ INNER JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
 WHERE COUNTRY.CONTINENT = 'Asia';
 ```
 
-![Revising the Select Query I](Section-4/asian-population-problem.png)
+![Population Census](Section-4/asian-population-problem.png)
 
 ## 3. Average Population of Each Continent
 
@@ -144,4 +144,4 @@ WHERE COUNTRY.CODE = CITY.COUNTRYCODE
 GROUP BY COUNTRY.CONTINENT;
 ```
 
-![Revising the Select Query I](Section-4/average-population-of-each-continent-problem.png)
+![Average Population of Each Continent](Section-4/average-population-of-each-continent-problem.png)
