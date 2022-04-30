@@ -7,6 +7,10 @@ MySQL-Queries_M70-HW11_last_Version
 SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION >= 120000;
 ```
 
+<p align="center">
+  <img width="460" height="300" src="https://github.com/amirhossein16/MySQL-Queries_M70-HW11_last_Version/blob/ce9b238a2119dcfc8a04d6c24cea6a55c91157ea/Section-1/revising-the-select-query-2-problem.png">
+</p>
+
 ![Revising the Select Query I](Section-1/revising-the-select-query-2-problem.png)
 
 ## 2. Revising the Select Query II
