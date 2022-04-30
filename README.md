@@ -3,7 +3,7 @@ MySQL-Queries_M70-HW11_last_Version
 
 ## 1. Revising the Select Query I
 
-```
+```sql
 SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION >= 120000;
 ```
 
